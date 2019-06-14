@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .menu{
+        list-style: none;
+        background:blue;
+        overflow: auto;
+        border-radius: 3px;
+        margin:0;
+        padding:0;
+
+        
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a{
+        display: block;
+        text-decoration: none;
+        color:white;
+        padding:10px 45px;
+    }
+    .menu a:hover{
+        color:black;
+        background:white;
+    }
+    .nav{
+        background: #f4f4f4;
+        border-radius:13px;
+        border:white 3px solid;
+        width:300px;
+        padding:2px;
+        /* Padding by default has some value but in order to remove it we overwrite the default value by assigning some value to it */
+    }
+    .nav li{
+        list-style:none;
+        box-sizing: border-box;
+        line-height: 32px;
+        padding:2px;
+        border-bottom:3px dotted;
+        width:250px;
+        }
+    .nav li a{
+        text-decoration: none;
+        }
+    li a:hover{
+        color:black;
+        background:white;
+    }
+    
+    </style>
+
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">About us</a></li>
+    </ul>
+    <ul class="nav">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">About us</a></li>
+    </ul>
+</body>
+</html>
