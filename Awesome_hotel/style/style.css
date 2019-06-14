@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* h1{
+    padding-bottom:10px;
+} */
+/* Main header for all pages */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* This wraps the background even when max-width is exceeded */
+.wrapper{
+    background: #333;   
+}
+header{
+    color:white;
+    overflow: auto;
+    height: 10vh;
+    /* Max-width to set device width less than or equal to  */
+    max-width: 1100px;
+    margin:auto;
+    /* padding: top right bottom left */
+    /* padding:10px 10px 0px 10px;  */
+    
+    /* overflow hidden to hide the vertical scrollbar */
+    overflow-y:hidden;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#main-header h1{
+    font-size: 1.5rem;
+    float:left;
+    padding:15px;
+}
+#main-header ul{
+    float: right;
+}
+#main-header li{
+    float:left;
+}
+#main-header li a{
+    display: block;
+    padding:22.3px;;
+}
+#main-header li a:hover, .current{
+    color:#f7c08a;
+    background:#444;
+}
+/* utilities */
+.bg-light{
+    color:#f7c08a;   
+}
+.bg-dark{
+    background:#333;
+}
+.p1x{
+    padding:10px;
+}
+.p2x{
+    padding:20px;
+}
+.p3x{
+    padding:30px;
+}
+
+/* for clear */
+.clr{
+    clear:both;
+}
+
+/* showcasing background image */
+#showcase-wrapper{
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height:90vh;
+    padding-top:7rem;
+}
+
+/* Align to the centre */
+#showcase-wrapper h1, p, #button, .hotel_desc .middle{
+    text-align: center;
+}
+
+/* for showcase heading */
+#showcase-wrapper h1{
+    margin-top: 4rem;
+    font-size: 4rem;
+    color:white;
+}
+#showcase-wrapper p{
+    margin-top:3rem;
+    color:white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/*This is using a image directly  
+.hotel_description{
+    height:20rem;
+}
+.hotel_img{
+    float:left;
+    width:50%;
+    height:100%;
+}
+img{
+    display: block;
+    width:100%;
+    margin:auto;
+    height: 80%;
+}
+.hotel_desc{
+    float:right;
+    width:50%;
+    color:white;
+    height: 80%;
+} */
+.hotel_description{
+    height: 350px;
+}
+
+.hotel_img{
+    background:url('../img/photo-1.jpg') no-repeat center center/cover;
+    width:50%;
+    float: left;
+    min-height: 100%;
+}
+.hotel_desc{
+    width:50%;
+    float:right;
+    min-height: 100%;
+    color:white;
+    line-height: 2rem;
+}
+.hotel_desc h1{
+    text-align: center;
+}
+.hotel_desc p{
+    margin-bottom: 2rem;
+}
+#features{
+    height:20rem;
+}
+.box{
+    width:33.3%;
+    float:left;
+    padding:2rem;
+    text-align: center;
+    background: whitesmoke;
+    height:100%;
+}
+.box h1{
+    margin-bottom:2rem; 
+}
+.box2{
+    background: #f7c08a;
+}
+footer{
+    color:white;
+}
+
+/* Buttons */
+button{
+    margin-top:1.5rem;
+    border:none;
+    text-align: center;
+    display: block;
+    margin:auto;
+}
+button a{
+    display: block;
+    padding:0.8rem;
+    background: whitesmoke;
+    color:black;
+    border:none;
+}
+#showcase-wrapper a{
+    background:#333;
+    color:white;
+}
+#showcase-wrapper a:hover{
+    color:white;
+    background: #f7c08a;
+}
+.hotel_description a:hover{
+    color:white;
+    background: #f7c08a;
+}
+
+/* About us page */
+.about_wrapper{
+    background: whitesmoke;
+}
+#abouthotel{
+    /* background: whitesmoke; */
+    max-width:1100px;
+    margin:auto;
+}
+#abouthotel #aboutinfoleft{
+    width:50%;
+    float: left;
+}
+#abouthotel h1{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+#abouthotel p{
+    margin-bottom: 1rem;
+    text-align: left;
+    line-height: 2rem;
+}
+#abouthotel #aboutinforight{
+    width:50%;
+    float:right;
+}
+#aboutinforight img{
+    min-height: 100%;
+    width:70%;
+    display: block;
+    margin: auto;
+    border-radius:50%;
+}
+/* for customer review */
+.customer_review{
+    background: url('../img/test-bg.jpg') no-repeat center center/cover;
+}
+.customer_review h1{
+    font-size: 3rem;
+    color:white;
+    text-align: center;
+    padding:3rem 0;
+}
+.customer_wrapper{
+    max-width: 1100px;
+    padding:1rem;
+    margin:auto;
+    
+}
+.review img{
+    width:80px;
+    float:left;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+.review{
+    /* height:130px; Dont add height to this */
+    margin-bottom: 4rem;
+    background: #f7c08a;
+    opacity:0.9;
+    padding:1rem;
+    border-radius: 10px;
+}
+.review p{
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+
+
+
+/* .review{
+    padding-bottom: 5rem;
+    padding-top:2rem;
+    background: #f7c08a;
+}
+.image{
+    float:left;
+    width:30%;
+}
+.review img{
+    display: inline-block;
+    width:50%;
+    border-radius: 50%;
+}
+.review p{
+    text-align: left;
+} */
+
+
+/* For Contact Us page */
+.for_form{
+    padding: 1rem;
+}
+
+.for_form h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.for_form p{
+    margin-bottom: 1rem;
+}
+.for_form .entry{
+    margin-bottom: 0.5rem;
+}
+input{
+    margin-bottom: 2rem;
+    display: block;
+    width:100%;
+    padding:0.5rem;
+    border:#ddd solid 1px;
+}
+textarea{
+    margin-top:1rem;
+    width:100%;
+    height:20vh;
+    border:solid #ddd 1px;
+}
+.for_form button{
+    padding:20px 25px;
+    font-size:1.2rem;
+    background:#333;
+    color:white;
+    cursor: pointer;
+}
+/* Icons of contact us */
+#contactfeatures{
+    background: #444;
+    overflow: auto;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contactfeatures .contactbox{
+    float:left;
+    width:33.3%;
+    padding:3rem;
+    color:white;
+}
+#contactfeatures .contactbox h3{
+padding:3rem 0;
+text-align: center;
+}
+#contactfeatures p{
+    text-align: center;
+}
+#contactfeatures i{
+    text-align: center;
+    display: block;
+}
+.contactwrap{
+    max-width:1100px;
+    margin:auto;
+}
+.contactwrapend{
+    background: #444;
+}

@@ -1,0 +1,179 @@
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        line-height: 
+    }
+    .nav,.container{
+        background: #333;
+        overflow: auto;
+    }
+    .nav1{
+        max-width: 900px;
+        margin: auto;
+    }
+    .nav{
+        max-width:900px;
+        margin:auto;
+    }
+    .container{
+        background: #333;
+        
+    }
+    .nav h1{
+        color: #fff;
+        float:left;
+    }
+    ul{
+        float: right;
+        list-style: none;
+    }
+    li{
+        float: left;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        color:white;
+        padding:20px;
+        
+    }
+    .abt,.rev,.con{
+        padding:25px;
+    }
+    ul a:hover,.abt{
+        color: #f7c0a8;
+        background:#444;
+    }
+    .showcase{
+        max-width: 60%;
+        margin:120px auto;
+        line-height: 30px;  
+        text-align: center;
+    }
+    .showcase h1{
+        font-size: 50px;
+        margin:40px auto;
+        color: white;
+        
+    }
+    .strpoint,.abouthotel{
+        color:#eb9e7d;
+    }
+    .showcase a{
+        color:white;
+        background: rgb(53, 50, 50);
+        padding:10px;
+        display: inline-block;
+        margin-top:30px;
+
+    }
+
+    .wrap{
+        background:url('../img/showcase.jpg') no-repeat center center/cover;
+        overflow: auto;
+        height:600px;
+    }
+    .showcase p{
+        color:white;
+    }
+    .showcase a:hover{
+        background: #eb9e7d;
+        color:black;
+    }
+
+    .hotelinfo{
+        height: 400px;
+
+    }
+    .hotelinfoimg{
+        background: url("../img/photo-1.jpg") no-repeat center center/cover;
+        float:left;
+        width:50%;
+        overflow: auto;
+        min-height: 100%;
+
+    }
+    .hotelinfodesc{
+        color:white;
+        background:white;
+        float:right;
+        width:50%;
+        line-height: 30px;
+        text-align: center;
+    }
+    .hotelinfodesc h1{
+        padding:50px;
+    }
+    .hotelinfodesc{
+        background: #333;
+        min-height: 100%;
+    }
+    .hotelinfodesc p{
+        padding-top:40px;
+    }
+    
+    .box{
+        float:left;
+        width:33.3%;
+        text-align: center;
+        overflow: aut;
+    }
+    .box i{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    .box h3{
+        margin-top:10px;
+        margin-bottom: 20px;
+    }
+    .box p{
+        margin-bottom: 30px;
+    }
+    #box2{
+        background:#f7c08a;
+    }
+    .clr{
+        clear: both;
+    }
+    .footer-main{
+        background: #444;
+        color:white;
+        text-align: center;
+        padding: 10px;
+    }
+    .contactcontainer h1{
+        font-size: 50px;
+        padding:30px 10px;
+    }
+    .contactcontainer form,p{
+        padding: 10px;
+    }
+    .contactcontainer form{
+
+        line-height: 40px;
+    }
+    .contactcontainer input,textarea{
+        display: block;
+        width:100%;
+        padding:5px;
+    }
+    textarea{
+        height: 200px;
+    }
+    .contactcontainer button{
+        background: #444;
+        color: white;
+        padding:20px 30px;
+        cursor: pointer;
+        margin-top:20px;
+        margin-bottom: 20px;
+        border:2px solid #444;
+        font-size: 20px;
+    }
+    #phonepar p{
+        display: inline;
+    }
