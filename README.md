@@ -1,2 +1,0 @@
-# HtmlPractice
-Basic html concepts
