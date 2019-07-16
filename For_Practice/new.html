@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-            <title>
-                    A good form
-            </title>
-            <!-- cltr +? for a new comment and below is for a link -->
-            <a href="https://www.tutorialspoint.com/python/python_while_loop.htm" target="_blank">Google.com</a>
-            <!-- This is for a small description of my webpage in google search -->
-            <meta name="description" content="Hello there">
-            <!-- This restricts google from searching my page -->
-            <meta name="robot" content="NOINDEX,NOFOLLOW">
-    </head>
-    <body>
-        <h1><strong>This is a form</strong></h1>
-        <form>
-            <div>
-            <label for="name">Name</label>
-            <input type="text" id=name name="name">
-            </div>
-            <hr>
-            <div>
-            <label for ="message">Message</label>
-            <textarea name="message" id=message></textarea>
-            </div>
-            <hr>
-            <div>
-            <label for="sex">Sex</label>
-            <select name="sex" id="sex">
-                <option value="male">male</option>
-                <option value ="female">female</option>
-            </select>
-            </div>
-        </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pages</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-shadow: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+        :root{
+            --page1-color:#4c6ca0;
+            --page2-color:brown;
+            --page3-color:rgb(167, 109, 109);
+        }
+        .page{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color:white;
+        }
+        h1{
+            padding:2rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+        p{
+            padding:1rem;
+            margin:1rem;
+            text-align: center;
+        }
+        a{
+            padding:1rem;
+            text-decoration: none;
+            color:white;
+            background: #222;
+        }
+
+        #page1:before{
+            background: var(--page1-color) url("a.jpg") no-repeat center center/cover;
+            opacity: 0.5;
+            z-index: -1;
+            content: '';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+                        }
+        #page1{
+            background: rgba(0, 0, 0, 0.8);
+        }
+        #page2{background: var(--page2-color)}
+        #page3{background: var(--page3-color)}
+
+    </style>
+</head>
+<body>
+    
+    <div class="page" id="page1">
+    <h1>Welcome to my presentation</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore similique recusandae fuga perferendis voluptates quo modi ea. Eligendi, debitis.</p>
+    <a href="#page2">Next Page</a>
+
+    </div>
+    <div class="page" id="page2">
+    <h1>Welcome to my presentation</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore similique recusandae fuga perferendis voluptates quo modi ea. Eligendi, debitis.</p>
+    <div>
+    <a href="#page1">Previouse Page</a>
+    <a href="#page3">Next Page</a></div>
+    </div>
+    <div class="page" id="page3">
+    <h1>Welcome to my presentation</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore similique recusandae fuga perferendis voluptates quo modi ea. Eligendi, debitis.</p>    
+    <a href="#page2">Previous Page</a></div>
+
+</body>
 </html>

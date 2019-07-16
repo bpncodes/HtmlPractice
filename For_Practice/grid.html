@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+    .one{
+        background:whitesmoke;
+        color:black;
+        padding:1rem;
+        text-align: center;
+        border:1px solid #c4c4c4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head{
+        display: grid;
+        grid-template-columns:auto auto auto;
+        grid-gap: 1rem;
+        grid-template-rows: repeat(1,10px) ;
+        background: #c6c6c6;
+        height: 100%;
+    }
+    .head .one:nth-child(odd){
+        color:white;
+        background: #4c6ca0;
+    }
+    .head .one:nth-child(even){
+        background: #888;
+    }
+    body{
+        background: #ddbcbc;
+        height: 100vh;
+    }
+    </style>
+</head>
+<body>
+    <header class='head'>
+        <div class="one"><h1>hi1</h1></div>
+        <div class="one"><h1>hi2</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+        <div class="one"><h1>hi3</h1></div>
+    </header>
+</body>
+</html>

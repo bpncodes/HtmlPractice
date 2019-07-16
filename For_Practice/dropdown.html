@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/5ea25086e1.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+     .main-header ul{
+         list-style:none;
+         background:inherit;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: row;
+     }
+     .main-header ul li{
+         
+         padding:1rem;
+         position: relative;
+         background: inherit;
+     }
+     .main-header ul li ul {
+         display: none;
+     }
+     .main-header{
+         background: #777;
+     }
+     .main-header ul li:hover ul{
+        display:block;
+        position:absolute;
+        left:0;
+     }
+     .main-header ul li ul{
+         background: inherit;
+         color:inherit;
+     }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+
+    <ul>
+        <li>Menu</li>
+        <li>About</li>
+        <li>Know more</li>
+        <li><a href="">Sections<i class="fas fa-caret-down"></i></a>
+            <ul>
+                <li>section 1</li>
+                <li>section 2</li>
+                <li>section 3</li>
+                <li>section 4</li>
+            </ul>
+        </li>
+    </ul>
+
+    </header>
+</body>
+</html>
